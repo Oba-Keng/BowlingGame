@@ -19,13 +19,12 @@ BowlingGame.prototype.score = function  (){
 
   
   
-  frameIndex = document.querySelector('#round1');
 
   var result = 0;
   var rollIndex = 0;
   var BowlingGame = this;
  
-
+  
   for(var frameIndex=0; frameIndex<10;frameIndex++){
     if(isStrike()){
       result += getStrikeScore();

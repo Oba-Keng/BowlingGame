@@ -7,12 +7,13 @@ describe('Bowling game',  () => {
     beforeEach(function (){
         game = new BowlingGame();
     });
-    
+
     // it('must take in player name input',function(){
     //     expect(game.insertName()).toBe('valid')
     // })
 
     it('can roll gutter game', function(){
+        
        rollMany(0,20);
        expect(game.score()).toBe(0);
 
